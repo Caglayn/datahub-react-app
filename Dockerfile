@@ -1,2 +1,4 @@
 FROM caglayn/debiannodejs:latest
-COPY * /home/reactapp/
+COPY public/ /home/reactapp/public/
+COPY src/ /home/reactapp/src/
+COPY package*.json /home/reactapp/
