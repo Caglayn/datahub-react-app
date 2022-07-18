@@ -7,4 +7,4 @@ RUN npm install
 RUN npm install -g serve
 EXPOSE 3000
 WORKDIR /home/
-ENTRYPOINT ["serve", "reactapp"]
+ENTRYPOINT ["serve", "-s", "build"]
