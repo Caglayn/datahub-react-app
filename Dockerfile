@@ -6,4 +6,4 @@ WORKDIR /home/reactapp/
 RUN npm install
 RUN npm install -g serve
 EXPOSE 3000
-ENTRYPOINT ["serve", "-s", "build"]
+ENTRYPOINT ["npm", "start"]
