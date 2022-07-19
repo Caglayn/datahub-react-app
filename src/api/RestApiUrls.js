@@ -1,4 +1,4 @@
-export const DATA_SERVICE = 'http://10.96.58.26:8091'; //http://localhost:8091 //
+export const DATA_SERVICE = 'http://130.185.118.99:30091'; //http://localhost:8091 //
 export const DATA_TRANSFORM_SERVICE = 'http://10.97.30.148:8092'; //http://localhost:8092 //
 
 export const QUERY = '/api/v1/query';
