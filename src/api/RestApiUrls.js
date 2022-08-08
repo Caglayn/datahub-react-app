@@ -1,5 +1,8 @@
-export const DATA_SERVICE = 'http://130.185.118.99:30091'; //http://localhost:8091 //
-export const DATA_TRANSFORM_SERVICE = 'http://10.97.30.148:8092'; //http://localhost:8092 //
+export const DATA_SERVICE = 'http://130.185.118.99:30091'; //'http://localhost:8091'
+export const DATA_TRANSFORM_SERVICE = 'http://130.185.118.99:30092'; // 'http://localhost:8092'
+export const USER_SERVICE = 'http://130.185.118.99:30093'; //'http://localhost:8093'
+
+export const SIGNIN = '/api/v1/auth/signin';
 
 export const QUERY = '/api/v1/query';
 

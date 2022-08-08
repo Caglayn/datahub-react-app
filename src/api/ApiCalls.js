@@ -1,6 +1,10 @@
 import * as URLS from './RestApiUrls';
 import axios from "axios";
 
+export const setToken = (token) => {
+    axios.defaults.headers['Authorization'] = 'Bearer ' + token;
+}
+
 export const updateCollectionListRequest = () => {
     return axios.get(URLS.DATA_SERVICE + URLS.COLLECTION_GETALLNAMES);
 }
@@ -35,4 +39,8 @@ export const createRowRequest = (body) => {
 
 export const queryRequest = (query) => {
     return axios.get(URLS.DATA_SERVICE+URLS.QUERY, {params: {query}});
+}
+
+export const signInRequest = (userName, password) => {
+    return axios.post(URLS.USER_SERVICE+URLS.SIGNIN+'?userName='+userName+'&password='+password);
 }

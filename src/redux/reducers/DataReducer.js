@@ -57,6 +57,11 @@ const DataReducer = (state = {...getDefaultState}, action) => {
             tempState = {...state};
             tempState.tableBody[action.payload.rowId] = action.payload.row;
             return tempState;
+        case ACTIONS.LOGGED_IN:
+            tempState = {...state};
+            tempState.userCredentials.token = action.payload;
+            tempState.loggedIn = true;
+            return tempState;
         default:
           return state;
     }

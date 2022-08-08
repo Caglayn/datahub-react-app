@@ -86,3 +86,10 @@ export const updateOneRowFromTableBody = payload => {
         payload
     };
 };
+
+export const loggedIn = payload => {
+    return{
+        type: ACTIONS.LOGGED_IN,
+        payload
+    };
+};

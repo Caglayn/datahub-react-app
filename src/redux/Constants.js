@@ -16,3 +16,5 @@ export const CLEAR_TABLE_BODY = 'clear-table-body';
 export const CLEAR_ACTIVE_COLLECTION = 'clear-active-collection';
 
 export const DELETE_ROW_FROM_COLLECTION = 'delete-row-from-collection';
+export const LOGGED_IN = 'logged-in';
+
